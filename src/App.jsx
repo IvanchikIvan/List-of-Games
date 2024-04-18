@@ -1,5 +1,5 @@
 import React from 'react'
-import Filter from './components/Filter'
+import Filter from './components/FilterComponent/FilterComponent'
 
 const GamesList = [
     {
@@ -8,8 +8,6 @@ const GamesList = [
         "price": 29.99,
         "date": "2023-05-15",
         "images": [
-            "https://example.com/witcher3/image1.jpg",
-            "https://example.com/witcher3/image2.jpg"
         ]
     },
     {
@@ -18,8 +16,6 @@ const GamesList = [
         "price": 39.99,
         "date": "2023-02-20",
         "images": [
-            "https://example.com/gtav/image1.jpg",
-            "https://example.com/gtav/image2.jpg"
         ]
     },
     {
@@ -28,8 +24,6 @@ const GamesList = [
         "price": 19.99,
         "date": "2022-11-10",
         "images": [
-            "https://example.com/minecraft/image1.jpg",
-            "https://example.com/minecraft/image2.jpg"
         ]
     },
     {
@@ -38,8 +32,6 @@ const GamesList = [
         "price": 49.99,
         "date": "2023-08-30",
         "images": [
-            "https://example.com/reddead2/image1.jpg",
-            "https://example.com/reddead2/image2.jpg"
         ]
     },
     {
@@ -48,8 +40,6 @@ const GamesList = [
         "price": 59.99,
         "date": "2022-12-15",
         "images": [
-            "https://example.com/zelda/image1.jpg",
-            "https://example.com/zelda/image2.jpg"
         ]
     }
 ]
@@ -57,6 +47,6 @@ const GamesList = [
 
 export default function App() {
     return (
-        <div>App</div>
+        <></>
     )
 }
