@@ -1,12 +1,24 @@
-import React from 'react'
-
-export default function SearchBar() {
+export default function SearchBar({
+    filterText,
+    inWhishListOnly,
+    onFilterTextChange,
+    oninWhishListOnlyChange,
+}) {
     return (
-        <form className='filter-from'>
-            <input type="text" className="search" placeholder='Поиск' />
+        <form className="filter-form">
+            <input
+                className="search-input"
+                type="text"
+                value={filterText}
+                placeholder="Поиск по названию"
+                onChange={(e) => onFilterTextChange(e.target.value)}
+            />
             <label>
-                <input type="checkbox" className="in-wish-list-checkbox" />
+                <input
+                    className="in-whish-list-checkbox"
+                    type="checkbox" checked={inWhishListOnly} onChange={(e) => oninWhishListOnlyChange(e.target.checked)}/>
+                Только в списке желаемого
             </label>
         </form>
-    )
+    );
 }
