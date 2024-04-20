@@ -1,5 +1,6 @@
 import React from "react";
 import FilterComponent from "./components/FilterComponent/FilterComponent";
+import "./App.css"
 
 const GAMESLIST= [
   {
