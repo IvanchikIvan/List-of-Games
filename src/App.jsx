@@ -42,8 +42,8 @@ const GAMESLIST= [
 
 export default function App() {
   return (
-    <>
+    <main className="main">
       <FilterComponent games={GAMESLIST}/>
-    </>
+    </main>
   );
 }
